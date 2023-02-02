@@ -8,7 +8,9 @@ https://tailwindcss.com/docs/installation
 Local:
 
 - run build
-  > npx tailwindcss -i ./\_layouts/main.css -o ./assets/styles/main.css --watch
+  > npx tailwindcss -i ./assets/styles/main_dev.css -o ./assets/styles/main.css --watch
+- jekyll serve --livereload
+- jekyll build
 
 Remote:
 
