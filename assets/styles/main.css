@@ -513,30 +513,324 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.m-2 {
+  margin: 0.5rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.h-96 {
+  height: 24rem;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-96 {
+  width: 24rem;
+}
+
+.w-screen {
+  width: 100vw;
+}
+
+.items-end {
+  align-items: flex-end;
+}
+
 .scroll-smooth {
   scroll-behavior: smooth;
 }
 
-.truncate {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+.p-4 {
+  padding: 1rem;
 }
 
-html {
-  scroll-behavior: smooth;
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* TYPEFACES */
 
 @font-face {
-  font-family: Hanson;
+  font-family: 'Hanson';
 
   src: url(../fonts/hanson-bold.woff2);
 
   font-weight: bold;
 }
 
+.text-grotesk {
+  font-family: 'Space Grotesk', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.text-mono {
+  font-family: 'Space Mono', monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 .text-hanson {
-  font-family: Hanson, sans-serif;
+  font-family: 'Hanson', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* SYMBOLS */
+
+.symbol-xl,
+.symbol-xl::after {
+  display: inline-flex;
+  content: '';
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 1.5rem;
+  width: 1.5rem;
+  background-size: contain;
+}
+
+.symbol-4xl,
+.symbol-4xl::after {
+  display: inline-flex;
+  content: '';
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 2.5rem;
+  width: 2.5rem;
+  background-size: contain;
+}
+
+.symbol-8xl,
+.symbol-8xl::after {
+  display: inline-flex;
+  content: '';
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 5rem;
+  width: 5rem;
+  background-size: contain;
+}
+
+.symbol-big,
+.symbol-big::after {
+  display: inline-flex;
+  content: '';
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 10rem;
+  width: 10rem;
+  background-size: contain;
+}
+
+.symbol-huge,
+.symbol-huge::after {
+  display: inline-flex;
+  content: '';
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 20rem;
+  width: 20rem;
+  background-size: contain;
+}
+
+.symbol-biggest,
+.symbol-biggest::after {
+  display: inline-flex;
+  content: '';
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+}
+
+.symred,
+.symred::after {
+  --tw-bg-opacity: 1;
+  background-color: rgb(246 51 28 / var(--tw-bg-opacity));
+}
+
+.symblue,
+.symblue::after {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 99 226 / var(--tw-bg-opacity));
+}
+
+.symlime {
+  --tw-bg-opacity: 1;
+  background-color: rgb(215 251 3 / var(--tw-bg-opacity));
+}
+
+.symlime::after {
+  --tw-brightness: brightness(0);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.sympink,
+.sympink::after {
+  --tw-bg-opacity: 1;
+  background-color: rgb(238 147 181 / var(--tw-bg-opacity));
+}
+
+.Warmth::after {
+  background-image: url('../images/symbols/Warmth.svg');
+}
+
+.Blooming::after {
+  background-image: url('../images/symbols/Blooming.svg');
+}
+
+.Calm::after {
+  background-image: url('../images/symbols/Calm.svg');
+}
+
+.Cents::after {
+  background-image: url('../images/symbols/Cents.svg');
+}
+
+.Connected::after {
+  background-image: url('../images/symbols/Connected.svg');
+}
+
+.Connective::after {
+  background-image: url('../images/symbols/Connective.svg');
+}
+
+.Continuous::after {
+  background-image: url('../images/symbols/Continuous Growth.svg');
+}
+
+.Direction::after {
+  background-image: url('../images/symbols/Direction.svg');
+}
+
+.Emerging::after {
+  background-image: url('../images/symbols/Emerging.svg');
+}
+
+.Energized::after {
+  background-image: url('../images/symbols/Energized.svg');
+}
+
+.Enhanced::after {
+  background-image: url('../images/symbols/Enhanced.svg');
+}
+
+.Expanding::after {
+  background-image: url('../images/symbols/Expanding 2.svg');
+}
+
+.For::after {
+  background-image: url('../images/symbols/For People.svg');
+}
+
+.Forward_2::after {
+  background-image: url('../images/symbols/Forward 2.svg');
+}
+
+.Forward::after {
+  background-image: url('../images/symbols/Forward.svg');
+}
+
+.Goals::after {
+  background-image: url('../images/symbols/Goals.svg');
+}
+
+.Haven::after {
+  background-image: url('../images/symbols/Haven 2.svg');
+  background-image: url('../images/symbols/Haven.svg');
+}
+
+.Inclusive::after {
+  background-image: url('../images/symbols/Inclusive.svg');
+}
+
+.Intersectional::after {
+  background-image: url('../images/symbols/Intersectional.svg');
+}
+
+.Invest::after {
+  background-image: url('../images/symbols/Invest 2.svg');
+  background-image: url('../images/symbols/Invest.svg');
+}
+
+.Moving::after {
+  background-image: url('../images/symbols/Moving Together.svg');
+}
+
+.Multiplication::after {
+  background-image: url('../images/symbols/Multiplication.svg');
+}
+
+.Navigating::after {
+  background-image: url('../images/symbols/Navigating.svg');
+}
+
+.No::after {
+  background-image: url('../images/symbols/No Boundaries.svg');
+}
+
+.Open::after {
+  background-image: url('../images/symbols/Open.svg');
+}
+
+.Powerful::after {
+  background-image: url('../images/symbols/Powerful.svg');
+}
+
+.Reference::after {
+  background-image: url('../images/symbols/Reference.svg');
+}
+
+.Security::after {
+  background-image: url('../images/symbols/Security.svg');
+}
+
+.Stability::after {
+  background-image: url('../images/symbols/Stability.svg');
+}
+
+.symbolsols::after {
+  background-image: url('../images/symbols/symbolsols.svg');
+  background-image: url('../images/symbols/symbolsols-1.svg');
+}
+
+.Team::after {
+  background-image: url('../images/symbols/Team.svg');
+}
+
+.Transparent::after {
+  background-image: url('../images/symbols/Transparent 2.svg');
+}
+
+.Uplift::after {
+  background-image: url('../images/symbols/Uplift.svg');
+}
+
+.Value::after {
+  background-image: url('../images/symbols/Value.svg');
+}
+
+.Visibility::after {
+  background-image: url('../images/symbols/Visibility.svg');
+}
+
+.FDL::after {
+  background-image: url('../images/logos/small_logo.svg');
 }
