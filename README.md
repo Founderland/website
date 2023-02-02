@@ -9,5 +9,7 @@ Local:
 
 - run build
   > npx tailwindcss -i ./\_layouts/main.css -o ./assets/styles/main.css --watch
-  > Remote:
+
+Remote:
+
 - Build process here: https://github.com/Founderland/website/actions
