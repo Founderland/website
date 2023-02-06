@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 /* TYPEFACES */
 @font-face {
   font-family: 'Hanson';
@@ -33,6 +27,34 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.text-inter {
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* GLOBAL */
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Inter', sans-serif;
+}
+
+/* SPACING */
+section {
+  @apply p-4 m-0;
+}
+
+figure {
+  @apply p-8 m-0;
+}
+
+.text-symbol {
+  line-height: 1.75rem !important;
+}
+
 /* SYMBOLS */
 .symbol-xl,
 .symbol-xl::after {
@@ -40,7 +62,7 @@ body {
   content: '';
   background-position: center;
   background-repeat: no-repeat;
-  @apply w-6 h-6 bg-contain;
+  @apply w-5 h-5 bg-contain;
 }
 
 .symbol-4xl,
@@ -223,4 +245,14 @@ body {
 }
 .FDL::after {
   background-image: url('../images/logos/small_logo.svg');
+}
+
+/* SECTIONS */
+
+footer {
+  @apply bg-black text-white flex flex-col spaxe-y-2;
+}
+
+.Footer-nav-group {
+  @apply flex flex-col;
 }

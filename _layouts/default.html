@@ -13,7 +13,9 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&family=Space+Mono&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk&family=Space+Mono&family=Inter:wght@200&display=swap"
+        rel="stylesheet">
     <!-- Styles -->
     <link href="./assets/styles/main.css" rel="stylesheet">
     <!-- Alpine Plugins -->
@@ -25,7 +27,11 @@
 </head>
 
 <body>
-    {{ content }}
+    <div class="flex flex-col min-h-screen">
+        {% include navbar.html %}
+        <div class="flex-grow">{{ content }}</div>
+        {% include footer.html %}
+    </div>
 </body>
 
 </html>
