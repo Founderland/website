@@ -1,5 +1,30 @@
-<div class="w-full">
-    <img src="assets/logos/logo512.png" alt="Founderland Logo" class="w-8 h-8 m-2">
+<nav class="shadow-lg fixed w-full bg-white z-50">
+    <div x-data="{showMenu : false}" class="container max-w-screen-lg mx-auto flex justify-between h-14">
+        <a href="/" class="flex items-center">
+            <img src="assets/logos/logo512.png" class="h-6 m-4 sm:h-9" alt="Founderland Logo" />
+        </a>
+        <!-- Navbar Toggle Button -->
+        <button @click="showMenu = !showMenu"
+            class="block md:hidden text-black p-2 focus:ring focus:bg-gray-100 my-2 mr-4" type="button"
+            aria-controls="navbar-main" aria-expanded="false" aria-label="Toggle navigation">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                </path>
+            </svg>
+        </button>
+        <!-- Nav Links-->
+        <ul class="Header-nav-item"
+            :class="{'block absolute top-14 border-b bg-white w-full p-2': showMenu, 'hidden': !showMenu}"
+            id="navbar-main" x-cloak>
+            {% for item in site.data.navigation %}
 
+            <li class="px-3 cursor-pointer flex text-black hover:text-gray-800 items-center transition-all duration-300 ease-in-out"
+                :class="showMenu && 'py-1'">
+                <a href="{{ item.link }}">{{ item.name }}</a>
+            </li>
+            {% endfor %}
 
-</div>
+        </ul>
+    </div>
+</nav>

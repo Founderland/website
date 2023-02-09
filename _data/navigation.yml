@@ -1,0 +1,10 @@
+- name: Home
+  link: /
+- name: About
+  link: /about.html
+- name: Programmes
+  link: /programmes.html
+- name: Join our community
+  link: /join-our-community.html
+- name: Login
+  link: /login.html

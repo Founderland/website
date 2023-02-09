@@ -6,7 +6,6 @@
 @font-face {
   font-family: 'Hanson';
   src: url(../fonts/hanson-bold.woff2);
-  font-weight: bold;
 }
 
 .text-grotesk {
@@ -33,13 +32,19 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.text-roboto {
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 /* GLOBAL */
 body {
   margin: 0;
   padding: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: 'Inter', sans-serif;
+  @apply text-inter;
 }
 
 /* SPACING */
@@ -51,8 +56,28 @@ figure {
   @apply p-8 m-0;
 }
 
+h1 {
+  @apply mb-4 md:mb-6 lg:mb-8 xl:mb-10;
+}
+
 .text-symbol {
   line-height: 1.75rem !important;
+}
+
+@screen md {
+  .text-symbol {
+    line-height: 2.5rem !important;
+  }
+}
+@screen lg {
+  .text-symbol {
+    line-height: 3rem !important;
+  }
+}
+@screen xl {
+  .text-symbol {
+    line-height: 3.5rem !important;
+  }
 }
 
 /* SYMBOLS */
@@ -62,7 +87,7 @@ figure {
   content: '';
   background-position: center;
   background-repeat: no-repeat;
-  @apply w-5 h-5 bg-contain;
+  @apply w-5 h-5 md:w-8 md:h-8 xl:w-12 xl:h-12 bg-contain;
 }
 
 .symbol-4xl,
@@ -247,12 +272,109 @@ figure {
   background-image: url('../images/logos/small_logo.svg');
 }
 
+/* TYPOGRAPHY */
+
+h1 {
+  @apply text-lg sm:text-2xl md:text-3xl lg:text-4xl xl:text-6xl 2xl:text-8xl font-bold text-hanson text-center;
+}
+h2 {
+  @apply text-base sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-medium text-grotesk text-center;
+}
+
+p {
+  @apply text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl font-normal text-grotesk text-justify;
+}
+
 /* SECTIONS */
 
 footer {
-  @apply bg-black text-white flex flex-col spaxe-y-2;
+  @apply bg-black text-white flex flex-col space-y-2;
 }
 
 .Footer-nav-group {
   @apply flex flex-col;
+}
+
+/* ELEMENTS */
+
+.Marquee {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+  z-index: auto;
+  background-color: transparent;
+}
+.Marquee-display {
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+.Marquee-svg {
+  width: 100%;
+  font-size: inherit;
+  height: 33px;
+}
+
+.Header-main {
+  @apply flex flex-col items-center justify-center;
+}
+.Header-logo {
+  @apply w-40;
+}
+.Header-nav {
+  @apply flex flex-wrap justify-center;
+}
+.Header-nav-item {
+  @apply md:flex md:flex-grow md:justify-center md:space-x-8 text-gray-700 text-base mr-3 origin-top transition-all duration-300 ease-in-out;
+}
+.Header-nav-item:hover {
+  @apply text-gray-500;
+}
+
+.Footer-main {
+  @apply flex;
+}
+.Footer-nav {
+  @apply flex flex-wrap justify-center;
+}
+.Footer-nav-group {
+  @apply p-4 w-40;
+}
+.Footer-nav-heading {
+  @apply pb-2 text-base text-roboto uppercase font-extrabold;
+}
+.Footer-nav-item {
+  @apply pb-2 text-sm text-roboto uppercase hover:text-gray-500 transition-all duration-300 ease-in-out;
+}
+.Footer-copy {
+  @apply pt-8 text-xxs lg:text-sm font-normal text-grotesk text-center;
+}
+
+.button {
+  font-size: max(0.75rem, 88.4%);
+  @apply flex items-center justify-center min-w-max h-12 px-4 py-2 border-2 border-black text-mono uppercase focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black transition-all duration-200 ease-in-out;
+}
+.button-fblue:hover {
+  @apply bg-fdlblue text-white;
+}
+.button-flime:hover {
+  @apply bg-fdllime text-black;
+}
+.button-fred:hover {
+  @apply bg-fdlred text-white;
+}
+.button-fpink:hover {
+  @apply bg-fdlpink text-white;
+}
+
+.card {
+  @apply flex w-full h-full flex-col justify-center items-start px-4 lg:px-8 py-8 lg:py-10 bg-white;
+}
+.card-title {
+  @apply w-full text-2xl font-bold text-mono px-4 mb-8 text-left;
+}
+.card-text {
+  @apply max-w-sm text-base font-normal text-inter px-4 mb-8 text-start;
 }

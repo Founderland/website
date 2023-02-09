@@ -3,8 +3,9 @@
 # Site settings
 title: Founderland
 description: "WE'RE BUILDING A NEW INCLUSIVE AND INTERSECTIONAL STANDARD FOR ENTREPRENEURS"
-baseurl: '/' # the subpath of your site, e.g. /blog
+baseurl: '' # the subpath of your site, e.g. /blog
 url: 'https://founderland.github.io' # the base hostname & protocol for your site
+permalink: pretty
 
 # Build settings
 exclude:
