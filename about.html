@@ -3,5 +3,126 @@ layout: default
 title: About
 permalink: /about
 ---
-
-<div>about</div>
+<figure>
+    <img src="assets/images/branding/about.jpg" class="" alt="Founderland Mosaic">
+    <h3 class="px-8 text-center">We’re proud to be building the fastest growing community of women of colour founders
+        across Europe.
+    </h3>
+</figure>
+<figure>
+    <div class="flex flex-col-reverse md:flex-row max-w-[1800px] mx-auto">
+        <div class="w-full md:w-1/2 md:aspect-square flex justify-center items-center p-8">
+            <h2 class="font-bold text-center md:text-left">WE’RE HERE TO BUILD A NEW INCLUSIVE, INTERSECTIONAL
+                STANDARD
+                FOR ENTREPRENEURS.</h2>
+        </div>
+        <div class="w-full md:w-1/2 p-8 flex justify-center items-center">
+            <div class="max-w-xl flex flex-col flex-grow bg-fdllime aspect-square justify-center items-center p-4">
+                <p class=" text-lg text-mono mb-8">
+                    Why we
+                    exist</p>
+                <p class="text-hanson text-center text-3xl lg:text-4xl">ON
+                    A
+                    MISSION</p>
+            </div>
+        </div>
+    </div>
+</figure>
+<div class="bg-black text-white">
+    <section>
+        <div class="p-4 md:p-8">
+            <h1 class="text-center">OUR VALUES</h1>
+            <div class="max-w-4xl mx-auto my-8 flex flex-col items-center md:flex-row md:justify-center md:space-x-10 ">
+                <div class="flex space-x-8 md:space-x-10 mb-8">
+                    <div class="w-32">
+                        <div class="w-full aspect-square">
+                            <div class="symbol symbol-biggest symblue Forward_2"></div>
+                        </div>
+                        <div class="text-center">
+                            <p class="px-2">We dream big enough to challenge</p>
+                        </div>
+                    </div>
+                    <div class="w-32">
+                        <div class="w-full aspect-square">
+                            <div class="symbol symbol-biggest sympink For"></div>
+                        </div>
+                        <div class="text-center">
+                            <p class="px-2">We're true to ourselves</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex space-x-8 md:space-x-10 mb-8">
+                    <div class="w-32">
+                        <div class="w-full aspect-square">
+                            <div class="symbol symbol-biggest symred Goals"></div>
+                        </div>
+                        <div class="text-center">
+                            <p class="px-2">We work together</p>
+                        </div>
+                    </div>
+                    <div class="w-32">
+                        <div class="w-full aspect-square">
+                            <div class="symbol symbol-biggest symlime Transparent"></div>
+                        </div>
+                        <div class="text-center">
+                            <p class="px-2">We're transparent</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<section>
+    <div class="flex flex-col md:flex-row-reverse mx-auto">
+        <div class="w-full md:w-1/2 md:aspect-square flex flex-col justify-center items-center p-8">
+            <h1 class="text-center md:text-left">OUR MANIFESTO</h1>
+            <h2 class="text-center md:text-left">DREAMS TO REALITIES, A PATH TAKEN HONESTLY, TOGETHER AND CLEAR.</h2>
+        </div>
+        <div class="w-full md:w-1/2 p-8 flex justify-center items-center">
+            <div class="max-w-xl flex flex-col flex-grow bg-fdlblue text-white  justify-center items-start p-4">
+                <p class="font-bold mt-8">Founderland.</p>
+                <p>A place without borders and boundaries.<br>
+                    Where everyone is welcomed and celebrated.<br>
+                    A place to put down roots and grow strong. Proud. Tall.</p>
+                <p>It's like nowhere you've ever seen before.<br>
+                    We lead where everyone else follows.<br>
+                    We set a new standard.</p>
+                <p>This is not business as usual.<br> We dream bigger and do better, and we claim space
+                    without apology.<br>
+                    We put money where it matters.</p>
+                <p>We put community first, and check egos at the door.<br>
+                    We build for ourselves and for those who'll come after us.<br>
+                    Changing the game as we go.</p>
+                <p class="font-bold">This is your land. This is Founderland.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="bg-fdlpink">
+    <section>
+        <figure>
+            <h1 class="text-center">YOU’VE GOT QUESTIONS?</h1>
+            <h3><a href="/faq.html" class="hover:underline underline-offset-2 decoration-gray-500">WE’VE GOT (SOME)
+                    ANSWERS.
+                    <strong>READ OUR FAQ</strong> TO LEARN MORE ABOUT OUR PURPOSE AND WHO WE
+                    SERVE.</a>
+            </h3>
+        </figure>
+    </section>
+</div>
+<section>
+    <h1 class="text-center">OUR TEAM</h1>
+    <div class="flex flex-col md:grid md:grid-cols-3 items-center justify-center">
+        {% for Name in site.data.ourteam %}
+        <div class="flex flex-col mb-8 text-mono p-4 md:p-8">
+            <img class="w-full aspect-square" src="{{ Name.headshot }}" alt="{{ Name.Name }}"
+                class="w-full h-full object-cover">
+            {% if Name.linkedin != null %}
+            <a href="{{Name.linkedin}}" class="text-fdlblue font-bold mt-4 text-xs lg:text-base">{{ Name.Name }}</a>
+            {% endif %}
+            <span class="text-xs 2xl:text-base">{{ Name.title }}</span>
+        </div>
+        {% endfor %}
+    </div>
+</section>

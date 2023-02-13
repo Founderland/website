@@ -4,4 +4,25 @@ title: Careers
 permalink: /careers
 ---
 
-<div>Careers</div>
+<section>
+    <h1 class="text-center">CAREERS</h1>
+    <h3 class="text-center">JOIN OUR TEAM TO LEVEL THE PLAYING FIELD FOR ALL ENTREPRENEURS.</h3>
+</section>
+{%- for job in site.data.jobs -%}
+<div>
+    <h2>{{ job.title }}</h2>
+    <h3>{{ job.location }}</h3>
+    <p>{{ job.description }}</p>
+    <a href="{{ job.link }}" target="_blank">Apply</a>
+</div>
+{%- endfor -%}
+<div class="bg-fdllime">
+    <section>
+        <h1>WE’RE BUILDING A NEW, INTERSECTIONAL AND INCLUSIVE STANDARD FOR ENTREPRENEURSHIP IN EUROPE AND THE UK. OUR
+            PURPOSE TAKES
+            A VILLAGE.</h1>
+        <h3>Didn't find a suitable position? Send us your CV to <a href="mailto:hello@founderland.org"
+                class="underline decoration-gray-300 underline-offset-4 hover:decoration-gray-500">hello@founderland.org</a>.
+        </h3>
+    </section>
+</div>

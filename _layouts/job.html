@@ -33,7 +33,13 @@
 <body class="min-h-screen flex flex-col" :class="openMenu ? 'overflow-hidden' : 'overflow-visible' "
     x-data="{ openMenu : false }">
     {% include navbar.html %}
-    <div class="flex-grow">{{ content }}</div>
+    <div class="flex-grow">
+        <section>
+            <h1 class="text-center">CAREERS</h1>
+            <h3 class="text-center">JOIN OUR TEAM TO LEVEL THE PLAYING FIELD FOR ALL ENTREPRENEURS.</h3>
+            {{ content }}
+        </section>
+    </div>
     {% include footer.html %}
     <script src="assets/scripts/script.js"></script>
 </body>
