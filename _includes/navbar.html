@@ -12,14 +12,14 @@
 
     <!-- Main Navigations -->
     <nav class="hidden lg:flex lg:flex-grow justify-center items-center">
-        <ul class="flex flex-row gap-8 text-mono text-xs tracking-wider font-bold">
+        <ul class="flex flex-row gap-4 text-mono text-xs tracking-wider font-bold">
             {% for item in site.data.navigation %}
             <li>
                 <a href="{{item.link}}" class="inline-flex py-2 px-6" aria-current="true">{{item.name}}</a>
             </li>
             {% endfor %}
             <li>
-                <a href="#" class="inline-flex py-2 px-3 bg-fdllime">Login</a>
+                <a href="https://community.founderland.org/community" class="inline-flex py-2 px-3 bg-fdllime">Login</a>
             </li>
         </ul>
 

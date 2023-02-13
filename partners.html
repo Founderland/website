@@ -3,5 +3,145 @@ layout: default
 title: Partners
 permalink: /partners/
 ---
+<img src="{{ site.baseurl }}/assets/images/branding/amplified.gif" class="w-full max-h-full lg:max-h-fit object-cover"
+    alt="Gif of a lecture">
+<section>
+    <div class="text-inter flex flex-col justify-items-center md:grid md:grid-cols-2 md:gap-2">
+        {% for partner in site.data.partners %}
+        <div class="mb-12">
+            <img src="{{ site.baseurl }}/{{ partner.headshot }}"
+                class="w-2/3 md:w-64 h-80 object-cover object-top md:float-left mx-auto md:m-4"
+                alt="{{ partner.name }}">
+            <div class="relative">
+                <a href="{{ partner.link }}" target="_blank"
+                    class="max-w-fit absolute left-8 -top-12 md:-left-0 md:top-6 text-2xl bg-white px-2 underline underline-offset-4 decoration-fdlpink-400 hover:decoration-fdlpink-600 py-0 leading-tight">
+                    {{ partner.name }}</a>
+                <p class="font-bold px-12 pt-4">{{partner.title}}</p>
+            </div>
+            <p class="px-12 text-xs">{{partner.quote}}</p>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+<img src="{{ site.baseurl }}/assets/images/branding/donate.gif" class="w-full max-h-full object-cover"
+    alt="Gif of 3 women gathering around a laptop, one is opening the laptop">
+<div class="bg-fdlpink text-hanson text-2xl">
+    <svg class="Marquee-svg" fill="currentColor" aria-hidden="true" style="height: 33px; transform: translateY(3.3px);">
+        <g class="Marquee-path-group" transform="translate(0, 1.6500000000000001)">
+            <path class="Marquee-path" fill="none" stroke="transparent" stroke-width="0"
+                d="M-550,21.846  L-550,21.846 S-183.15,21.846 0,21.846 S366.85,21.846 550,21.846 S916.85,21.846 1100,21.846 S1466.85,21.846 1650,21.846 S2016.85,21.846 2200,21.846 S2566.85,21.846 2750,21.846"
+                stroke-dasharray="267 26.4 25 26.4 " id="yui_3_17_2_1_1662586060424_2493" stroke-dashoffset="254">
+            </path>
+        </g>
+        <text>
+            <textPath class="Marquee-svg-text" href="#yui_3_17_2_1_1662586060424_2493" startOffset="-254">
+                <tspan class="Marquee-svg-text" x="0">Donate today</tspan>
+                <tspan class="Marquee-svg-text" x="293.4">⚡️</tspan>
+                <tspan class="Marquee-svg-text" x="344.79999999999995">Donate today</tspan>
+                <tspan class="Marquee-svg-text" x="638.1999999999999">⚡️</tspan>
+                <tspan class="Marquee-svg-text" x="689.5999999999999">Donate today</tspan>
+                <tspan class="Marquee-svg-text" x="982.9999999999999">⚡️</tspan>
+                <tspan class="Marquee-svg-text" x="1034.3999999999999">Donate today</tspan>
+                <tspan class="Marquee-svg-text" x="1327.7999999999997">⚡️</tspan>
+                <tspan class="Marquee-svg-text" x="1379.1999999999998">Donate today</tspan>
+                <tspan class="Marquee-svg-text" x="1672.6">⚡️</tspan>
+                <tspan class="Marquee-svg-text" x="1724">Donate today</tspan>
+                <tspan class="Marquee-svg-text" x="2017.4">⚡️</tspan>
+                <tspan class="Marquee-svg-text" x="2068.8">Donate today</tspan>
+                <tspan class="Marquee-svg-text" x="2362.2000000000003">⚡️</tspan>
+                <tspan class="Marquee-svg-text" x="2413.6000000000004">Donate today</tspan>
+                <tspan class="Marquee-svg-text" x="2707.0000000000005">⚡️</tspan>
+                <tspan class="Marquee-svg-text" x="2758.4000000000005">Donate today</tspan>
+                <tspan class="Marquee-svg-text" x="3051.8000000000006">⚡️</tspan>
+                <tspan class="Marquee-svg-text" x="3103.2000000000007">Donate today</tspan>
+                <tspan class="Marquee-svg-text" x="3396.600000000001">⚡️</tspan>
+                <tspan class="Marquee-svg-text" x="3448.000000000001">Donate today</tspan>
+                <tspan class="Marquee-svg-text" x="3741.400000000001">⚡️</tspan>
+                <tspan class="Marquee-svg-text" x="3792.800000000001">Donate today</tspan>
+                <tspan class="Marquee-svg-text" x="4086.200000000001">⚡️</tspan>
+                <tspan class="Marquee-svg-text" x="4137.600000000001">Donate today</tspan>
+                <tspan class="Marquee-svg-text" x="4431.000000000001">⚡️</tspan>
+                <tspan class="Marquee-svg-text" x="4482.400000000001">Donate today</tspan>
+                <tspan class="Marquee-svg-text" x="4775.800000000001">⚡️</tspan>
+                <tspan class="Marquee-svg-text" x="4827.200000000001">Donate today</tspan>
+                <tspan class="Marquee-svg-text" x="5120.600000000001">⚡️</tspan>
+                <tspan class="Marquee-svg-text" x="5172.000000000001">Donate today</tspan>
+                <tspan class="Marquee-svg-text" x="5465.400000000001">⚡️</tspan>
+            </textPath>
+        </text>
+        <text>
+            <textPath class="Marquee-svg-group" visibility="hidden" href="#yui_3_17_2_1_1662586060424_2493">
 
-<div>Partners</div>
+                <tspan class="Marquee-svg-text">Donate today</tspan>
+
+                <tspan class="Marquee-svg-text">⚡️</tspan>
+
+            </textPath>
+        </text>
+        <a class="Marquee-hitbox" data-hitbox="" href="https://www.paypal.com/donate/?hosted_button_id=Q52JXYNGYT8FW"
+            target="_blank" aria-labelledby="ariaLabelyui_3_17_2_1_1662586060424_2493">
+            <g class="Marquee-path-hitbox-group" transform="translate(0, -5.461500000000001)">
+                <path class="Marquee-path-hitbox" fill="none" stroke="transparent"
+                    d="M-550,21.846  L-550,21.846 S-183.15,21.846 0,21.846 S366.85,21.846 550,21.846 S916.85,21.846 1100,21.846 S1466.85,21.846 1650,21.846 S2016.85,21.846 2200,21.846 S2566.85,21.846 2750,21.846"
+                    id="yui_3_17_2_1_1662586060424_2493" stroke-width="33"></path>
+                <path class="Marquee-path-hitbox-focus-outline" fill="none" stroke="transparent" stroke-width="2px" d="
+              M-550,33
+               L-550,29.7 S-183.15,29.7 0,29.7 S366.85,29.7 550,29.7 S916.85,29.7 1100,29.7 S1466.85,29.7 1650,29.7 S2016.85,29.7 2200,29.7 S2566.85,29.7 2750,29.7
+              M-550,3.3000000000000003
+               L-550,3.3000000000000003 S-183.15,3.3000000000000003 0,3.3000000000000003 S366.85,3.3000000000000003 550,3.3000000000000003 S916.85,3.3000000000000003 1100,3.3000000000000003 S1466.85,3.3000000000000003 1650,3.3000000000000003 S2016.85,3.3000000000000003 2200,3.3000000000000003 S2566.85,3.3000000000000003 2750,3.3000000000000003
+            " style="transform: translateY(3.3px);"></path>
+            </g>
+        </a>
+    </svg>
+</div>
+<section>
+    <h2>A HUGE THANK YOU TO OUR PARTNERS</h2>
+    <h3>Founderland would not be possible without you.</h3>
+    <div class="flex flex-col md:grid md:grid-cols-4">
+        {% for partner in site.data.partnerslogos %}
+        <div class="m-4">
+            <img class="w-40 h-40 object-cover mx-auto" src="{{site.baseurl}}/{{ partner.logo }}"
+                alt="{{ partner.name }}" />
+        </div>
+        {% endfor %}
+    </div>
+</section>
+<div class="bg-fdlpink">
+    <section>
+        <h2>THANK YOU TO OUR SUPPORTERS</h2>
+        <h3>Let’s continue to work together and break down barriers.</h3>
+        <div class="flex flex-col-reverse md:flex-row">
+            <img class="w-1/2 aspect-square mx-auto object-contain"
+                src="{{site.baseurl}}/assets/images/branding/FDL_giphy.gif" alt="Founderland GIF Animation" />
+            <div class="partners w-full md:w-1/2 p-8 flex justify-center items-center">
+                <ul>
+                    <li>
+                        Ananda Impact Ventures</li>
+                    <li>
+                        Omers Ventures</li>
+                    <li>
+                        Factory Berlin</li>
+                    <li>
+                        Google for Startups</li>
+                    <li>
+                        Notion for Startups</li>
+                    <li>
+                        DocSend</li>
+                    <li>
+                        Cabal</li>
+                    <li>
+                        Cobble</li>
+                    <li>
+                        Penta</li>
+                    <li>
+                        Zendesk for Startups</li>
+                    <li>
+                        Miro for Startups</li>
+                    <li>
+                        BetterHelp
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</div>

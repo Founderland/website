@@ -33,11 +33,20 @@
 <body class="min-h-screen flex flex-col" :class="openMenu ? 'overflow-hidden' : 'overflow-visible' "
     x-data="{ openMenu : false }">
     {% include navbar.html %}
-    <div class="flex-grow">
+    <div class="flex-grow job">
         <section>
             <h1 class="text-center">CAREERS</h1>
             <h3 class="text-center">JOIN OUR TEAM TO LEVEL THE PLAYING FIELD FOR ALL ENTREPRENEURS.</h3>
             {{ content }}
+        </section>
+        <section>
+            <div class="h-1 bg-fdlblue w-full"></div>
+            <h3>Does this job profile sound exciting to you?</h3>
+            <p>Then we are looking forward to your 1-minute video, CV and references including your first possible
+                starting date and
+                salary expectations.</p>
+            <p>Please send to <a href="mailto:hello@founderland.org">hello@founderland.org</a> and please include in the
+                email how you heard from us.</p>
         </section>
     </div>
     {% include footer.html %}
