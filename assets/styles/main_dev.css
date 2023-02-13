@@ -57,7 +57,7 @@ section {
 }
 
 figure {
-  @apply p-0 m-0 md:p-8 lg:p-12 max-w-7xl mx-auto;
+  @apply p-4 m-0 md:p-8 lg:p-12 max-w-7xl mx-auto;
 }
 
 h1 {

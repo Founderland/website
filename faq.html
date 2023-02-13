@@ -1,14 +1,14 @@
 ---
 layout: default
 title: FAQ
-permalink: /faq
+permalink: /faq/
 ---
 
 <section class="faq">
     <h1 class="uppercase text-center">Frequently asked questions</h1>
     <h2>About Founderland</h2>
     {% for question in site.data.faq.aboutfdl %}
-    <div x-data="{ expanded: false }" class="relative border border-gray-300 mb-4 p-4 text-mono">
+    <div x-data="{ expanded: false }" class="relative border border-gray-400 mb-4 p-4 text-mono">
         <div class="w-full flex space-x-2 items-center cursor-pointer hover:text-fdlblue"
             x-bind:class="{ 'text-fdlblue': expanded }" @click="expanded = ! expanded">
             <p class=" flex-grow mr-4 mb-0 tracking-wider">{{ question.question }}
@@ -29,7 +29,7 @@ permalink: /faq
     {% endfor %}
     <h2>About the Team / Founders</h2>
     {% for question in site.data.faq.aboutteam %}
-    <div x-data="{ expanded: false }" class="relative border border-gray-300 mb-4 p-4 text-mono">
+    <div x-data="{ expanded: false }" class="relative border border-gray-400 mb-4 p-4 text-mono">
         <div class="w-full flex space-x-2 items-center cursor-pointer hover:text-fdlblue"
             x-bind:class="{ 'text-fdlblue': expanded }" @click="expanded = ! expanded">
             <p class="font-bold flex-grow mr-4 mb-0">{{ question.question }}
@@ -50,7 +50,7 @@ permalink: /faq
     {% endfor %}
     <h2>About the Community</h2>
     {% for question in site.data.faq.aboutcommunity %}
-    <div x-data="{ expanded: false }" class="relative border border-gray-300 mb-4 p-4 text-mono">
+    <div x-data="{ expanded: false }" class="relative border border-gray-400 mb-4 p-4 text-mono">
         <div class="w-full flex space-x-2 items-center cursor-pointer hover:text-fdlblue"
             x-bind:class="{ 'text-fdlblue': expanded }" @click="expanded = ! expanded">
             <p class="font-bold flex-grow mr-4 mb-0">{{ question.question }}
@@ -71,7 +71,7 @@ permalink: /faq
     {% endfor %}
     <h2>About the Ecosystem - Investors & Allies</h2>
     {% for question in site.data.faq.aboutecosystem %}
-    <div x-data="{ expanded: false }" class="relative border border-gray-300 mb-4 p-4 text-mono">
+    <div x-data="{ expanded: false }" class="relative border border-gray-400 mb-4 p-4 text-mono">
         <div class="w-full flex space-x-2 items-center cursor-pointer hover:text-fdlblue"
             x-bind:class="{ 'text-fdlblue': expanded }" @click="expanded = ! expanded">
             <p class="font-bold flex-grow mr-4 mb-0">{{ question.question }}
@@ -139,7 +139,7 @@ permalink: /faq
     <h2>About Compass</h2>
     <h3>General</h3>
     {% for question in site.data.faq.aboutcompassg %}
-    <div x-data="{ expanded: false }" class="relative border border-gray-300 mb-4 p-4 text-mono">
+    <div x-data="{ expanded: false }" class="relative border border-gray-400 mb-4 p-4 text-mono">
         <div class="w-full flex space-x-2 items-center cursor-pointer hover:text-fdlblue"
             x-bind:class="{ 'text-fdlblue': expanded }" @click="expanded = ! expanded">
             <p class="font-bold flex-grow mr-4 mb-0">{{ question.question }}
@@ -160,7 +160,7 @@ permalink: /faq
     {% endfor %}
     <h3>Applications Questions</h3>
     {% for question in site.data.faq.aboutcompassaq %}
-    <div x-data="{ expanded: false }" class="relative border border-gray-300 mb-4 p-4 text-mono">
+    <div x-data="{ expanded: false }" class="relative border border-gray-400 mb-4 p-4 text-mono">
         <div class="w-full flex space-x-2 items-center cursor-pointer hover:text-fdlblue"
             x-bind:class="{ 'text-fdlblue': expanded }" @click="expanded = ! expanded">
             <p class="font-bold flex-grow mr-4 mb-0">{{ question.question }}
@@ -181,7 +181,7 @@ permalink: /faq
     {% endfor %}
     <h3>Program Logistics</h3>
     {% for question in site.data.faq.aboutcompasspl %}
-    <div x-data="{ expanded: false }" class="relative border border-gray-300 mb-4 p-4 text-mono">
+    <div x-data="{ expanded: false }" class="relative border border-gray-400 mb-4 p-4 text-mono">
         <div class="w-full flex space-x-2 items-center cursor-pointer hover:text-fdlblue"
             x-bind:class="{ 'text-fdlblue': expanded }" @click="expanded = ! expanded">
             <p class="font-bold flex-grow mr-4 mb-0">{{ question.question }}
@@ -202,7 +202,7 @@ permalink: /faq
     {% endfor %}
     <h3>Compass Programming</h3>
     {% for question in site.data.faq.aboutcompasscp %}
-    <div x-data="{ expanded: false }" class="relative border border-gray-300 mb-4 p-4 text-mono">
+    <div x-data="{ expanded: false }" class="relative border border-gray-400 mb-4 p-4 text-mono">
         <div class="w-full flex space-x-2 items-center cursor-pointer hover:text-fdlblue"
             x-bind:class="{ 'text-fdlblue': expanded }" @click="expanded = ! expanded">
             <p class="font-bold flex-grow mr-4 mb-0">{{ question.question }}
@@ -224,10 +224,10 @@ permalink: /faq
 </section>
 <section>
     <p>Additional Questions? You can get in touch with us via email, at <a href="mailto:hello@founderland.org"
-            class="underline underline-offset-4 decoration-gray-300 hover:decoration-gray-600">hello@founderland.org</a>.
+            class="underline underline-offset-4 decoration-gray-400 hover:decoration-gray-600">hello@founderland.org</a>.
         <br>For press,
         contact
         Stephanie von Behr, Managing Director via email at <a href="mailto:stephanie@founderland.org"
-            class="underline underline-offset-4 decoration-gray-300 hover:decoration-gray-600">stephanie@founderland.org</a>.
+            class="underline underline-offset-4 decoration-gray-400 hover:decoration-gray-600">stephanie@founderland.org</a>.
     </p>
 </section>

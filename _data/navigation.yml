@@ -1,8 +1,10 @@
 - name: Home
-  link: /founderland
+  link: /
 - name: About
-  link: about.html
+  link: /about
 - name: Programmes
-  link: programmes.html
+  link: /programmes
+- name: Research
+  link: /research
 - name: Join our community
-  link: join-our-community.html
+  link: /join-our-community
