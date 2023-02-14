@@ -3,12 +3,18 @@ layout: default
 title: About
 permalink: /about/
 ---
-<figure>
-    <img src="{{ site.baseurl }}/assets/images/branding/about.jpg" class="" alt="Founderland Mosaic">
-    <h3 class="px-8 text-center">We’re proud to be building the fastest growing community of women of colour founders
-        across Europe.
-    </h3>
-</figure>
+<div>
+    <img src="{{ site.baseurl }}/assets/images/branding/about.jpg"
+        class="w-full h-full object-top lg:max-h-96 lg:object-cover" alt="Founderland Mosaic">
+</div>
+<div class="bg-black text-white">
+    <figure>
+        <h2 class="px-8 text-center">We’re proud to be building the fastest growing community of women of colour
+            founders
+            across Europe.
+        </h2>
+    </figure>
+</div>
 <figure>
     <div class="flex flex-col-reverse md:flex-row max-w-[1800px] mx-auto">
         <div class="w-full md:w-1/2 md:aspect-square flex justify-center items-center p-8">
@@ -30,10 +36,11 @@ permalink: /about/
 </figure>
 <div class="bg-black text-white">
     <section>
-        <div class="p-4 md:p-8">
-            <h1 class="text-center">OUR VALUES</h1>
-            <div class="max-w-4xl mx-auto my-8 flex flex-col items-center md:flex-row md:justify-center md:space-x-10 ">
-                <div class="flex space-x-8 md:space-x-10 mb-8">
+        <h1 class="text-center">OUR VALUES</h1>
+        <figure>
+            <div
+                class="max-w-4xl mx-auto my-8 flex flex-col items-center md:items-start md:flex-row md:justify-center md:space-x-12 ">
+                <div class="flex space-x-8 md:space-x-12 mb-8">
                     <div class="w-32">
                         <div class="w-full aspect-square">
                             <div class="symbol symbol-biggest symblue Forward_2"></div>
@@ -51,7 +58,7 @@ permalink: /about/
                         </div>
                     </div>
                 </div>
-                <div class="flex space-x-8 md:space-x-10 mb-8">
+                <div class="flex space-x-8 md:space-x-12 mb-8">
                     <div class="w-32">
                         <div class="w-full aspect-square">
                             <div class="symbol symbol-biggest symred Goals"></div>
@@ -70,7 +77,7 @@ permalink: /about/
                     </div>
                 </div>
             </div>
-        </div>
+        </figure>
     </section>
 </div>
 <section>
@@ -101,7 +108,7 @@ permalink: /about/
 </section>
 <div class="bg-fdlpink">
     <section>
-        <h1 class="text-center">YOU’VE GOT QUESTIONS?</h1>
+        <h1 class="text-center text-white">YOU’VE GOT QUESTIONS?</h1>
         <h3><a href="/faq.html" class="hover:underline underline-offset-2 decoration-gray-500">WE’VE GOT (SOME)
                 ANSWERS.
                 <strong>READ OUR FAQ</strong> TO LEARN MORE ABOUT OUR PURPOSE AND WHO WE
@@ -119,7 +126,7 @@ permalink: /about/
             {% if Name.linkedin != null %}
             <a href="{{Name.linkedin}}" class="text-fdlblue font-bold mt-4 text-xs lg:text-base">{{ Name.Name }}</a>
             {% endif %}
-            <span class="text-xs 2xl:text-base">{{ Name.title }}</span>
+            <span class="text-xxs lg:text-xs 2xl:text-sm">{{ Name.title }}</span>
         </div>
         {% endfor %}
     </div>

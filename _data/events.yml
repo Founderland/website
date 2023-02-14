@@ -1,0 +1,18 @@
+- name: FEBRUARY COMMUNITY EVENT WITH ELODIE MARTINEZ
+  description: Elodie is a Marketing executive with a tracked record in implementing the vision, the strategy and the planning necessary to grow businesses from ground-zero. She has spent the past 6 years at Amazon in various Senior roles, growing the Audible business (Business Development, Product, Influencer Marketing). A truly International individual, with experience in North America and Europe, she enjoys working and managing multicultural teams.
+  cover: assets/images/events/february.jpg
+  speaker: ELODIE MARTINEZ
+  link: https://www.linkedin.com/in/elodiegmartinez/
+  restricted: true
+- name: MARCH COMMUNITY EVENT WITH NOREEN CHADNA
+  description: Noreen runs a transformational coaching business in Berlin, supporting leaders to become more self aware, and experience more confidence and peace. She has a particular passion for the brain, teaching her clients some of the principles of mindfulness and neuroplasticity. Prior to this she spent over 10 years in the hospitality industry; mainly operating and opening new hotels out of New York.
+  cover: assets/images/events/march.jpg
+  speaker: NOREEN CHADNA
+  link:
+  restricted: true
+- name: APRIL COMMUNITY EVENT WITH DAMA SATHIANATHAN
+  description: Want to learn more about what it takes to fundraise in the current economic climate and more Bethal Ventures and their investment goals, then this is the event for you?! Dama Sathianathan (she/her) is a partner at Bethnal Green Ventures (BGV), Europe's leading early-stage tech for good VC, backing ambitious founders using tech to tackle pressing social and environmental challenges at scale. At BGV, she leads on deal flow orignation, community and networks, driving BGV's efforts to act with integrity on diversity, equity and inclusion and fuel the broader tech for good movement across the UK. She sits on the steering committee of VentureESG, the world's largest community of VCs and LPs stewarding better-shared learning and practices to integrate ESG and impact at the fund level and beyond.
+  cover: assets/images/events/april.jpg
+  speaker: DAMA SATHIANATHAN
+  link:
+  restricted: true

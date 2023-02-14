@@ -4,4 +4,106 @@ title: Events
 permalink: /events/
 ---
 
-<div>Events</div>
+<div>
+    <img src="{{ site.baseurl }}/assets/images/branding/events.png" class=" w-full h-full object-top"
+        alt="Founderland event Founders group picture">
+</div>
+<figure>
+    <h2 class="px-8 text-center">DESIGNED TO SUPPORT FOUNDERS ON THEIR ENTREPRENEURIAL JOURNEYS — AT EVERY STEP OF THE
+        WAY.
+    </h2>
+</figure>
+<div class="bg-fdlpink text-white">
+    <section>
+        <h1 class="uppercase text-center">Upcoming events</h1>
+    </section>
+</div>
+<section>
+    {% for event in site.data.events %} <div class="w-full flex flex-col justify-center items-center">
+        <h2 class="text-center md:text-left">{{ event.name }}</h2>
+        <div class="w-full">
+            <img src="{{site.baseurl}}/{{ event.cover }}" alt="{{ event.title }}" class="w-full">
+        </div>
+        <div class="w-full p-4 flex flex-col items-center">
+            <p class="text-inter ">{{ event.description }}</p>
+            {% if event.link %}
+            <a class="button max-w-fit" href="{{event.link}}">{{ event.speaker }}</a>
+            {% endif %}
+            {% if event.restricted %}
+            <h4>* this event is only for Founderland community members *</h4>
+            {% endif %}
+        </div>
+        {% endfor %}
+</section>
+<div class="bg-fdlpink text-white">
+    <div class="Marquee py-4">
+        <div class="Marquee-display text-hanson font-bold text-2xl">
+            <a href="https://u46iu5kv85h.typeform.com/to/KBgtIUH8" target="_blank">
+                <svg class="Marquee-svg" fill="currentColor" aria-hidden="true"
+                    style="height: 33px; transform: translateY(3.3px);">
+                    <g class="Marquee-path-group" transform="translate(0, 1.6500000000000001)">
+                        <path class="Marquee-path" fill="none" stroke="transparent" stroke-width="0"
+                            d="M-550,21.846  L-550,21.846 S-183.15,21.846 0,21.846 S366.85,21.846 550,21.846 S916.85,21.846 1100,21.846 S1466.85,21.846 1650,21.846 S2016.85,21.846 2200,21.846"
+                            stroke-dasharray="386 12 25 12 " id="yui_3_17_2_1_1658755528137_2017"
+                            stroke-dashoffset="73.5">
+                        </path>
+                    </g>
+                    <text>
+                        <textPath class="Marquee-svg-text" href="#yui_3_17_2_1_1658755528137_2017" startOffset="-73.5">
+                            <tspan class="Marquee-svg-text" x="0">Nominate a Speaker</tspan>
+                            <tspan class="Marquee-svg-text" x="398">⚡️</tspan>
+                            <tspan class="Marquee-svg-text" x="435">Nominate a Speaker</tspan>
+                            <tspan class="Marquee-svg-text" x="833">⚡️</tspan>
+                            <tspan class="Marquee-svg-text" x="870">Nominate a Speaker</tspan>
+                            <tspan class="Marquee-svg-text" x="1268">⚡️</tspan>
+                            <tspan class="Marquee-svg-text" x="1305">Nominate a Speaker</tspan>
+                            <tspan class="Marquee-svg-text" x="1703">⚡️</tspan>
+                            <tspan class="Marquee-svg-text" x="1740">Nominate a Speaker</tspan>
+                            <tspan class="Marquee-svg-text" x="2138">⚡️</tspan>
+                            <tspan class="Marquee-svg-text" x="2175">Nominate a Speaker</tspan>
+                            <tspan class="Marquee-svg-text" x="2573">⚡️</tspan>
+                            <tspan class="Marquee-svg-text" x="2610">Nominate a Speaker</tspan>
+                            <tspan class="Marquee-svg-text" x="3008">⚡️</tspan>
+                            <tspan class="Marquee-svg-text" x="3045">Nominate a Speaker</tspan>
+                            <tspan class="Marquee-svg-text" x="3443">⚡️</tspan>
+                            <tspan class="Marquee-svg-text" x="3480">Nominate a Speaker</tspan>
+                            <tspan class="Marquee-svg-text" x="3878">⚡️</tspan>
+                            <tspan class="Marquee-svg-text" x="3915">Nominate a Speaker</tspan>
+                            <tspan class="Marquee-svg-text" x="4313">⚡️</tspan>
+                            <tspan class="Marquee-svg-text" x="4350">Nominate a Speaker</tspan>
+                            <tspan class="Marquee-svg-text" x="4748">⚡️</tspan>
+                            <tspan class="Marquee-svg-text" x="4785">Nominate a Speaker</tspan>
+                            <tspan class="Marquee-svg-text" x="5183">⚡️</tspan>
+                            <tspan class="Marquee-svg-text" x="5220">Nominate a Speaker</tspan>
+                            <tspan class="Marquee-svg-text" x="5618">⚡️</tspan>
+                        </textPath>
+                    </text>
+                    <text>
+                        <textPath class="Marquee-svg-group" visibility="hidden" href="#yui_3_17_2_1_1658755528137_2017">
+
+                            <tspan class="Marquee-svg-text">Nominate a Speaker</tspan>
+
+                            <tspan class="Marquee-svg-text">⚡️</tspan>
+
+                        </textPath>
+                    </text>
+                    <a class="Marquee-hitbox" data-hitbox="" href="https://u46iu5kv85h.typeform.com/to/KBgtIUH8"
+                        target="_blank" aria-labelledby="ariaLabelyui_3_17_2_1_1658755528137_2017">
+                        <g class="Marquee-path-hitbox-group" transform="translate(0, -5.461500000000001)">
+                            <path class="Marquee-path-hitbox" fill="none" stroke="transparent"
+                                d="M-550,21.846  L-550,21.846 S-183.15,21.846 0,21.846 S366.85,21.846 550,21.846 S916.85,21.846 1100,21.846 S1466.85,21.846 1650,21.846 S2016.85,21.846 2200,21.846"
+                                id="yui_3_17_2_1_1658755528137_2017" stroke-width="33"></path>
+                            <path class="Marquee-path-hitbox-focus-outline" fill="none" stroke="transparent"
+                                stroke-width="2px" d="
+          M-550,33
+           L-550,29.7 S-183.15,29.7 0,29.7 S366.85,29.7 550,29.7 S916.85,29.7 1100,29.7 S1466.85,29.7 1650,29.7 S2016.85,29.7 2200,29.7
+          M-550,3.3000000000000003
+           L-550,3.3000000000000003 S-183.15,3.3000000000000003 0,3.3000000000000003 S366.85,3.3000000000000003 550,3.3000000000000003 S916.85,3.3000000000000003 1100,3.3000000000000003 S1466.85,3.3000000000000003 1650,3.3000000000000003 S2016.85,3.3000000000000003 2200,3.3000000000000003
+        " style="transform: translateY(3.3px);"></path>
+                        </g>
+                    </a>
+                </svg>
+            </a>
+        </div>
+    </div>
+</div>

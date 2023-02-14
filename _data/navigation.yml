@@ -1,12 +1,12 @@
 - name: Home
   link: /
 - name: About
-  link: /about
+  link: /about/
 - name: Programmes
-  link: /programmes
+  link: /programmes/
 - name: Research
-  link: /research
+  link: /research/
 - name: Events
-  link: /events
+  link: /events/
 - name: Join our community
-  link: /join-our-community
+  link: /join-our-community/
