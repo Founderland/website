@@ -126,13 +126,23 @@ footer {
   font-size: inherit;
   height: 33px;
 }
-.Marquee-svg-text {
-  animation: marquee 10s linear infinite;
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  @apply px-4 py-12;
+}
+
+.marquee span {
+  display: inline-block;
+  animation: marquee 60s linear infinite;
+  white-space: nowrap;
+  @apply text-hanson text-6xl text-black;
 }
 
 @keyframes marquee {
   0% {
-    transform: translateX(0);
+    transform: translateX(0%);
   }
   100% {
     transform: translateX(-100%);
@@ -192,13 +202,13 @@ footer {
 }
 
 .card {
-  @apply flex w-full h-full flex-col justify-center items-start px-4 lg:px-8 py-8 lg:py-10 bg-white;
+  @apply flex flex-col h-full justify-center items-start bg-white p-8;
 }
 .card-title {
-  @apply w-full text-2xl font-bold text-mono px-4 mb-8 text-left;
+  @apply w-full text-2xl font-bold text-mono px-8 mb-8 text-left;
 }
 .card-text {
-  @apply max-w-sm text-base font-normal text-inter px-4 mb-8 text-start;
+  @apply w-full text-sm lg:text-base 2xl:text-lg font-normal text-inter px-8 mb-8 text-start;
 }
 
 .faq a {

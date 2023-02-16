@@ -628,29 +628,9 @@ video {
   margin-bottom: 1rem;
 }
 
-.mx-4 {
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
 .mx-2 {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
-}
-
-.mx-3 {
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
-}
-
-.mx-1 {
-  margin-left: 0.25rem;
-  margin-right: 0.25rem;
-}
-
-.mx-5 {
-  margin-left: 1.25rem;
-  margin-right: 1.25rem;
 }
 
 .mb-8 {
@@ -699,10 +679,6 @@ video {
 
 .inline-block {
   display: inline-block;
-}
-
-.inline {
-  display: inline;
 }
 
 .flex {
@@ -761,11 +737,6 @@ video {
   height: 1.5rem;
 }
 
-.max-h-min {
-  max-height: -moz-min-content;
-  max-height: min-content;
-}
-
 .max-h-full {
   max-height: 100%;
 }
@@ -802,6 +773,10 @@ video {
   width: 1rem;
 }
 
+.w-px {
+  width: 1px;
+}
+
 .w-6 {
   width: 1.5rem;
 }
@@ -824,22 +799,6 @@ video {
 
 .w-11\/12 {
   width: 91.666667%;
-}
-
-.w-8 {
-  width: 2rem;
-}
-
-.w-1 {
-  width: 0.25rem;
-}
-
-.w-2 {
-  width: 0.5rem;
-}
-
-.w-px {
-  width: 1px;
 }
 
 .min-w-fit {
@@ -1678,13 +1637,31 @@ footer {
   height: 33px;
 }
 
-.Marquee-svg-text {
-  animation: marquee 10s linear infinite;
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.marquee span {
+  display: inline-block;
+  animation: marquee 60s linear infinite;
+  white-space: nowrap;
+  font-size: 3.75rem;
+  line-height: 1;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+  font-family: 'Hanson', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 @keyframes marquee {
   0% {
-    transform: translateX(0);
+    transform: translateX(0%);
   }
 
   100% {
@@ -1906,32 +1883,19 @@ footer {
 .card {
   display: flex;
   height: 100%;
-  width: 100%;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-@media (min-width: 1024px) {
-  .card {
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
-  }
+  padding: 2rem;
 }
 
 .card-title {
   margin-bottom: 2rem;
   width: 100%;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   text-align: left;
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1943,16 +1907,30 @@ footer {
 
 .card-text {
   margin-bottom: 2rem;
-  max-width: 24rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  width: 100%;
+  padding-left: 2rem;
+  padding-right: 2rem;
   text-align: start;
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   font-weight: 400;
   font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+@media (min-width: 1024px) {
+  .card-text {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .card-text {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
 }
 
 .faq a {
@@ -2708,11 +2686,6 @@ footer {
     margin: 1rem;
   }
 
-  .md\:mx-5 {
-    margin-left: 1.25rem;
-    margin-right: 1.25rem;
-  }
-
   .md\:mx-2 {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
@@ -2721,6 +2694,11 @@ footer {
   .md\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
+  }
+
+  .md\:mx-5 {
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
   }
 
   .md\:mb-0 {
@@ -2944,14 +2922,6 @@ footer {
 
   .lg\:w-8 {
     width: 2rem;
-  }
-
-  .lg\:w-10 {
-    width: 2.5rem;
-  }
-
-  .lg\:w-2 {
-    width: 0.5rem;
   }
 
   .lg\:flex-grow {
