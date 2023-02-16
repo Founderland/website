@@ -126,6 +126,18 @@ footer {
   font-size: inherit;
   height: 33px;
 }
+.Marquee-svg-text {
+  animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 
 .Header-main {
   @apply flex flex-col items-center justify-center;
@@ -147,16 +159,16 @@ footer {
   @apply flex;
 }
 .Footer-nav {
-  @apply flex flex-wrap justify-start;
+  @apply md:p-4 xl:p-8 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5;
 }
 .Footer-nav-group {
   @apply p-4 w-44;
 }
 .Footer-nav-heading {
-  @apply pb-2 text-base text-roboto uppercase font-extrabold;
+  @apply pb-2 text-sm md:text-base text-roboto uppercase font-extrabold;
 }
 .Footer-nav-item {
-  @apply pb-2 text-sm text-roboto uppercase hover:text-gray-500 transition-all duration-300 ease-in-out;
+  @apply pb-2 text-xs md:text-sm text-roboto uppercase hover:text-gray-500 transition-all duration-300 ease-in-out;
 }
 .Footer-copy {
   @apply pt-8 text-xxs lg:text-sm font-normal text-grotesk text-center;

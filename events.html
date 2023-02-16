@@ -8,18 +8,19 @@ permalink: /events/
     <img src="{{ site.baseurl }}/assets/images/branding/events.png" class=" w-full h-full object-top"
         alt="Founderland event Founders group picture">
 </div>
-<figure>
-    <h2 class="px-8 text-center">DESIGNED TO SUPPORT FOUNDERS ON THEIR ENTREPRENEURIAL JOURNEYS — AT EVERY STEP OF THE
-        WAY.
-    </h2>
-</figure>
 <div class="bg-fdlpink text-white">
-    <section>
+
+    <figure>
         <h1 class="uppercase text-center">Upcoming events</h1>
-    </section>
+        <h3 class="px-8 text-center">DESIGNED TO SUPPORT FOUNDERS ON THEIR ENTREPRENEURIAL JOURNEYS — AT EVERY STEP OF
+            THE
+            WAY.
+        </h3>
+    </figure>
 </div>
 <section>
-    {% for event in site.data.events %} <div class="w-full flex flex-col justify-center items-center">
+    {% for event in site.data.events %}
+    <div class="w-full flex flex-col justify-center items-center">
         <h2 class="text-center md:text-left">{{ event.name }}</h2>
         <div class="w-full">
             <img src="{{site.baseurl}}/{{ event.cover }}" alt="{{ event.title }}" class="w-full">
@@ -27,13 +28,16 @@ permalink: /events/
         <div class="w-full p-4 flex flex-col items-center">
             <p class="text-inter ">{{ event.description }}</p>
             {% if event.link %}
-            <a class="button max-w-fit" href="{{event.link}}">{{ event.speaker }}</a>
+            <a class="button max-w-fit my-4" href="{{event.link}}">{{ event.speaker }}</a>
             {% endif %}
             {% if event.restricted %}
-            <h4>* this event is only for Founderland community members *</h4>
+            <h4 class="text-center">* this event is only for Founderland community members *</h4>
+            {% else %}
+            <h4 class="text-center">* this event is public *</h4>
             {% endif %}
         </div>
-        {% endfor %}
+    </div>
+    {% endfor %}
 </section>
 <div class="bg-fdlpink text-white">
     <div class="Marquee py-4">
