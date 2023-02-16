@@ -302,25 +302,6 @@ footer {
 }
 
 /* SYMBOLS */
-.text-symbol {
-  line-height: 1.75rem !important;
-}
-
-@screen md {
-  .text-symbol {
-    line-height: 2.5rem !important;
-  }
-}
-@screen lg {
-  .text-symbol {
-    line-height: 3rem !important;
-  }
-}
-@screen xl {
-  .text-symbol {
-    line-height: 3.5rem !important;
-  }
-}
 
 .symbol-xl,
 .symbol-xl::after {
@@ -328,25 +309,7 @@ footer {
   content: '';
   background-position: center;
   background-repeat: no-repeat;
-  @apply w-5 h-5 md:w-8 md:h-8 xl:w-12 xl:h-12 bg-contain;
-}
-
-.symbol-4xl,
-.symbol-4xl::after {
-  display: inline-flex;
-  content: '';
-  background-position: center;
-  background-repeat: no-repeat;
-  @apply w-10 h-10 bg-contain;
-}
-
-.symbol-8xl,
-.symbol-8xl::after {
-  display: inline-flex;
-  content: '';
-  background-position: center;
-  background-repeat: no-repeat;
-  @apply w-20 h-20 bg-contain;
+  @apply w-6 h-6 md:w-7 md:h-7 xl:w-8 xl:h-8 bg-contain;
 }
 
 .symbol-big,
