@@ -208,7 +208,7 @@ footer {
   @apply w-full text-2xl font-bold text-mono px-8 mb-8 text-left;
 }
 .card-text {
-  @apply w-full text-sm lg:text-base 2xl:text-lg font-normal text-inter px-8 mb-8 text-start;
+  @apply w-full text-sm lg:text-base 2xl:text-lg lg:w-1/2 font-normal text-inter px-8 mb-8 text-start;
 }
 
 .faq a {
@@ -269,46 +269,39 @@ footer {
   @apply mb-2;
 }
 
-.video-background {
-  background: #000;
-  position: relative;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio */
-  height: 0;
-}
-.video-background iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
+.press-card {
+  @apply flex flex-col-reverse md:flex-row w-full border border-gray-400 hover:border-black hover:bg-gray-100 transition-all duration-500 ease-in-out cursor-pointer;
 }
 
-@media (min-aspect-ratio: 16/9) {
-  .video-foreground {
-    height: 300%;
-    top: -100%;
-  }
+.press-card-title {
+  @apply w-full text-base md:text-xl font-bold text-mono mb-2 text-left truncate;
 }
-@media (max-aspect-ratio: 16/9) {
-  .video-foreground {
-    width: 300%;
-    left: -100%;
-  }
+
+.press-card-description {
+  @apply w-full block grow text-sm font-normal text-inter mb-4 line-clamp-3;
 }
-@media all and (max-width: 600px) {
-  .vid-info {
-    width: 50%;
-    padding: 0.5rem;
-  }
-  .vid-info h1 {
-    margin-bottom: 0.2rem;
-  }
+
+.press-card-image {
+  @apply w-full max-h-48 aspect-video md:h-full object-cover;
 }
-@media all and (max-width: 500px) {
-  .vid-info .acronym {
-    display: none;
-  }
+
+.press-card-link {
+  @apply text-gray-400 text-xs font-bold truncate;
+}
+
+.press-card-date {
+  @apply text-black absolute bottom-0 left-0 text-xxs text-grotesk px-4 mb-1;
+}
+
+.award-card {
+  @apply flex flex-col w-full border hover:border-black hover:bg-gray-100 transition-all duration-500 ease-in-out cursor-pointer py-4 px-8 justify-center items-center max-w-fit;
+}
+
+.award-card-image {
+  @apply w-60 h-60 object-contain;
+}
+.award-card-title {
+  @apply w-full text-sm text-mono m-0 text-center;
 }
 
 /* SYMBOLS */
@@ -319,7 +312,7 @@ footer {
   content: '';
   background-position: center;
   background-repeat: no-repeat;
-  @apply w-6 h-6 md:w-7 md:h-7 xl:w-8 xl:h-8 bg-contain;
+  @apply w-6 h-6 md:w-7 md:h-7 xl:w-12 xl:h-12 bg-contain;
 }
 
 .symbol-big,
