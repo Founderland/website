@@ -185,8 +185,7 @@ footer {
 }
 
 .button {
-  font-size: max(0.75rem, 88.4%);
-  @apply flex items-center justify-center min-w-max h-12 px-4 py-2 border-2 border-black text-mono uppercase focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black transition-all duration-200 ease-in-out;
+  @apply flex items-center justify-center max-w-fit h-12 px-4 py-2 border-2 hover:bg-black hover:text-white border-black text-mono uppercase focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black transition-all duration-200 ease-in-out;
 }
 .button-fblue:hover {
   @apply bg-fdlblue text-white;
