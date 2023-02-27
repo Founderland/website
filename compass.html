@@ -31,17 +31,14 @@ permalink: /compass/
         <h3 class="text-center font-mono">Applications open on March
             1st!
         </h3>
-        <a class="button mx-auto" href="#" target="_blank">Sign up here to be the first to know.</a>
+        <a class="button mx-auto" href="https://community.founderland.org/newsletter" target="_blank">Sign up here to be
+            the first to know</a>
     </section>
-</div>
-<div class="bg-black text-white">
-    <figure>
-        timeline carrousel
-    </figure>
 </div>
 <section>
     <h2 class="text-center">What you will get from Compass</h2>
-    <p>Welcome to Compass 2023, the premier investor-readiness accelerator program for entrepreneurs! At Compass, we
+    <p class="text-left md:text-center">Welcome to Compass 2023, the premier investor-readiness accelerator program for
+        entrepreneurs! At Compass, we
         offer
         weekly cohort and 1:1 meetings, expert pitch practice sessions, role-playing with investors, and negotiation
         skills
@@ -53,25 +50,46 @@ permalink: /compass/
 </section>
 <div class="bg-black text-white">
     <figure>
-        <div class="grid grid-cols-1 md:grid-cols-2 md:gap-4">
+        timeline carrousel
+    </figure>
+</div>
+<div class="bg-black text-white">
+    <figure>
+        <div class="compass_core grid grid-cols-1 md:grid-cols-2 md:gap-4">
             <div class="grid grid-cols-2 gap-4">
-                <div>
-                    <div class="symbol Intersectional symblue symbol-big"></div>
-                    <p>text</p>
+                <div class="flex flex-col justify-center items-center">
+                    <div class="symbol Blooming sympink symbol-big"></div>
+                    <p>Attend weekly cohort and 1:1 meetings</p>
                 </div>
-                <div>
-                    <div class="symbol Intersectional symblue symbol-big"></div>
-                    <p>text</p>
+                <div class="flex flex-col justify-center items-center">
+                    <div class="symbol Energized symred symbol-big"></div>
+                    <p>Ace your pitch with regular practice sessions</p>
+                </div>
+                <div class="flex flex-col justify-center items-center">
+                    <div class="symbol Goals symlime symbol-big"></div>
+                    <p>Create a fundraising plan </p>
+                </div>
+                <div class="flex flex-col justify-center items-center">
+                    <div class="symbol Reference symblue symbol-big"></div>
+                    <p>Access investor and industry sector research</p>
                 </div>
             </div>
             <div class="grid grid-cols-2 gap-4">
-                <div>
-                    <div class="symbol Intersectional symblue symbol-big"></div>
-                    <p>text</p>
+                <div class="flex flex-col justify-center items-center">
+                    <div class="symbol Invest symblue symbol-big"></div>
+                    <p>Role play with investors so you can oversubscribe your fundraiser</p>
                 </div>
-                <div>
-                    <div class="symbol Intersectional symblue symbol-big"></div>
-                    <p>text</p>
+                <div class="flex flex-col justify-center items-center">
+                    <div class="symbol Affirmative symlime symbol-big"></div>
+                    <p>Learn how to negotiate your terms like a boss</p>
+                </div>
+                <div class="flex flex-col justify-center items-center">
+                    <div class="symbol For symred symbol-big"></div>
+                    <p>Join the Slack channel and access valuable opportunities</p>
+                </div>
+                <div class="flex flex-col justify-center items-center">
+                    <div class="symbol Uplift sympink symbol-big"></div>
+                    <p>Post-program check-ins</p>
                 </div>
             </div>
         </div>
@@ -80,7 +98,7 @@ permalink: /compass/
 {% if site.data.compassalumni23 %}
 <div class="bg-fdllime">
     <section>
-        <h1 class=" text-center">Compass 2022 Alumnis</h1>
+        <h1 class=" text-center">Compass 2023 Alumnis</h1>
         <div class="text-inter justify-items-center grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 md:gap-2 mt-12">
             {% for alumni in site.data.compassalumni23 %}
             <div
@@ -160,7 +178,7 @@ permalink: /compass/
 {% if site.data.compassspeakers23 %}
 <div class="bg-fdlblue text-white">
     <section>
-        <h1 class=" text-center">Compass 2022 Speakers</h1>
+        <h1 class=" text-center">Compass 2023 Speakers</h1>
         <div class="py-8">
             <div class="text-inter grid justify-items-center sm:grid-cols-2 gap-2 md:gap-4">
                 {% for speaker in site.data.compassspeakers23 %}
@@ -179,7 +197,7 @@ permalink: /compass/
     </section>
 </div>
 {% endif %}
-<section>
+<div class="bg-fdlblue text-white pt-8 pb-6">
     <svg class="text-hanson text-2xl font-bold w-full h-10" fill="currentColor" aria-hidden="true">
         <g class="Marquee-path-group">
             <path class="w-full" fill="none" stroke="transparent" stroke-width="0"
@@ -222,9 +240,11 @@ permalink: /compass/
             </textPath>
         </text>
     </svg>
+</div>
+<section>
     <h2>About Compass</h2>
     <h3>General</h3>
-    {% for question in site.data.faq.aboutcompassg %}
+    {% for question in site.data.faq.compass_general %}
     <div x-data="{ expanded: false }" class="relative border border-gray-400 mb-4 p-4 text-mono">
         <div class="w-full flex space-x-2 items-center cursor-pointer hover:text-fdlblue"
             x-bind:class="{ 'text-fdlblue': expanded }" @click="expanded = ! expanded">
@@ -245,7 +265,7 @@ permalink: /compass/
     </div>
     {% endfor %}
     <h3>Applications Questions</h3>
-    {% for question in site.data.faq.aboutcompassaq %}
+    {% for question in site.data.faq.compass_application %}
     <div x-data="{ expanded: false }" class="relative border border-gray-400 mb-4 p-4 text-mono">
         <div class="w-full flex space-x-2 items-center cursor-pointer hover:text-fdlblue"
             x-bind:class="{ 'text-fdlblue': expanded }" @click="expanded = ! expanded">
@@ -266,7 +286,7 @@ permalink: /compass/
     </div>
     {% endfor %}
     <h3>Program Logistics</h3>
-    {% for question in site.data.faq.aboutcompasspl %}
+    {% for question in site.data.faq.compass_program_logistics %}
     <div x-data="{ expanded: false }" class="relative border border-gray-400 mb-4 p-4 text-mono">
         <div class="w-full flex space-x-2 items-center cursor-pointer hover:text-fdlblue"
             x-bind:class="{ 'text-fdlblue': expanded }" @click="expanded = ! expanded">
@@ -287,7 +307,7 @@ permalink: /compass/
     </div>
     {% endfor %}
     <h3>Compass Programming</h3>
-    {% for question in site.data.faq.aboutcompasscp %}
+    {% for question in site.data.faq.compass_programming %}
     <div x-data="{ expanded: false }" class="relative border border-gray-400 mb-4 p-4 text-mono">
         <div class="w-full flex space-x-2 items-center cursor-pointer hover:text-fdlblue"
             x-bind:class="{ 'text-fdlblue': expanded }" @click="expanded = ! expanded">
@@ -308,14 +328,60 @@ permalink: /compass/
     </div>
     {% endfor %}
 </section>
-<div class="flex flex-col-reverse md:flex-row bg-fdlblue text-white">
-    <img src="{{site.baseurl}}/assets/images/compass/FDL-compass-bluesquare.png" alt="" class="w-full md:w-1/2 p-12">
+<div class="bg-fdlblue text-white pt-8 pb-6">
+    <svg class="text-hanson text-2xl font-bold w-full h-10" fill="currentColor" aria-hidden="true">
+        <g class="Marquee-path-group">
+            <path class="w-full" fill="none" stroke="transparent" stroke-width="0"
+                d="M-550,21.846  L-550,21.846 S-183.15,21.846 0,21.846 S366.85,21.846 550,21.846 S916.85,21.846 1100,21.846 S1466.85,21.846 1650,21.846 S2016.85,21.846 2200,21.846"
+                stroke-dasharray="168 14.4 15 14.4 " id="yui_3_17_2_1_1655815426610_6319" stroke-dashoffset="0">
+            </path>
+        </g>
+        <text>
+            <textPath class="Marquee-svg-text" href="#yui_3_17_2_1_1655815426610_6319" startOffset="0">
+                <tspan class="Marquee-svg-text" x="0">COMPASS</tspan>
+                <tspan class="Marquee-svg-text" x="182.4">&gt;</tspan>
+                <tspan class="Marquee-svg-text" x="211.8">COMPASS</tspan>
+                <tspan class="Marquee-svg-text" x="394.20000000000005">&gt;</tspan>
+                <tspan class="Marquee-svg-text" x="423.6">COMPASS</tspan>
+                <tspan class="Marquee-svg-text" x="606">&gt;</tspan>
+                <tspan class="Marquee-svg-text" x="635.4">COMPASS</tspan>
+                <tspan class="Marquee-svg-text" x="817.8">&gt;</tspan>
+                <tspan class="Marquee-svg-text" x="847.1999999999999">COMPASS</tspan>
+                <tspan class="Marquee-svg-text" x="1029.6">&gt;</tspan>
+                <tspan class="Marquee-svg-text" x="1059">COMPASS</tspan>
+                <tspan class="Marquee-svg-text" x="1241.4">&gt;</tspan>
+                <tspan class="Marquee-svg-text" x="1270.8000000000002">COMPASS</tspan>
+                <tspan class="Marquee-svg-text" x="1453.2000000000003">&gt;</tspan>
+                <tspan class="Marquee-svg-text" x="1482.6000000000004">COMPASS</tspan>
+                <tspan class="Marquee-svg-text" x="1665.0000000000005">&gt;</tspan>
+                <tspan class="Marquee-svg-text" x="1694.4000000000005">COMPASS</tspan>
+                <tspan class="Marquee-svg-text" x="1876.8000000000006">&gt;</tspan>
+                <tspan class="Marquee-svg-text" x="1906.2000000000007">COMPASS</tspan>
+                <tspan class="Marquee-svg-text" x="2088.600000000001">&gt;</tspan>
+                <tspan class="Marquee-svg-text" x="2118.000000000001">COMPASS</tspan>
+                <tspan class="Marquee-svg-text" x="2300.400000000001">&gt;</tspan>
+                <tspan class="Marquee-svg-text" x="2329.800000000001">COMPASS</tspan>
+                <tspan class="Marquee-svg-text" x="2512.200000000001">&gt;</tspan>
+                <tspan class="Marquee-svg-text" x="2541.6000000000013">COMPASS</tspan>
+                <tspan class="Marquee-svg-text" x="2724.0000000000014">&gt;</tspan>
+                <tspan class="Marquee-svg-text" x="2753.4000000000015">COMPASS</tspan>
+                <tspan class="Marquee-svg-text" x="2935.8000000000015">&gt;</tspan>
+                <tspan class="Marquee-svg-text" x="2965.2000000000016">COMPASS</tspan>
+                <tspan class="Marquee-svg-text" x="3147.6000000000017">&gt;</tspan>
+            </textPath>
+        </text>
+    </svg>
+</div>
+<div class="flex flex-col-reverse md:flex-row justify-center">
+    <img src="{{site.baseurl}}/assets/images/compass/FDL-compass-bluesquare.png" alt=""
+        class="w-full md:w-1/2 lg:w-1/3 p-12">
     <div class="w-full md:w-1/2 flex flex-col justify-center items-center p-8">
-        <h2 class="text-center">Sign up for Compass 2023</h2>
-        <a href="{{site.baseurl}}/compass2022" class="button">Sign up</a>
+        <h2 class="text-center">Want to be part of 2023 cohort</h2>
+        <a href="#" class="button ">Apply for Compass</a>
     </div>
 </div>
-<figure>
-    <h2 class="text-center">Compass 2022</h2>
-    <a href="{{site.baseurl}}/compass2022" class="button mx-auto">Check Out last year's cohort</a>
-</figure>
+<div class="bg-fdlblue text-white">
+    <figure>
+        <a href="{{site.baseurl}}/compass2022" class="button mx-auto text-lg">Check Out the 2022 cohort</a>
+    </figure>
+</div>

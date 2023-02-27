@@ -303,6 +303,10 @@ footer {
   @apply w-full text-sm text-mono m-0 text-center;
 }
 
+.compass_core p {
+  @apply text-sm text-center my-2 px-8;
+}
+
 /* SYMBOLS */
 
 .symbol-xl,
@@ -360,6 +364,9 @@ footer {
   @apply bg-fdlpink;
 }
 
+.Affirmative::after {
+  background-image: url('../images/symbols/Affirmative.svg');
+}
 .Warmth::after {
   background-image: url('../images/symbols/Warmth.svg');
 }
@@ -445,7 +452,7 @@ footer {
   background-image: url('../images/symbols/Powerful.svg');
 }
 .Reference::after {
-  background-image: url('../images/symbols/Reference.svg');
+  background-image: url('../images/symbols/Black_Reference_.svg');
 }
 .Security::after {
   background-image: url('../images/symbols/Security.svg');
