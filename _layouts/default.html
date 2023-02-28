@@ -26,10 +26,9 @@
     <!--Alpine Js framework-->
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link rel="manifest" href="{{ site.baseurl }}/manifest.json" />
-    <!-- Marquee Scripts -->
 </head>
 
-<body class="min-h-screen flex flex-col" :class="openMenu ? 'overflow-hidden' : 'overflow-visible' "
+<body class="min-h-screen flex flex-col scroll-smooth" :class="openMenu ? 'overflow-hidden' : 'overflow-visible' "
     x-data="{ openMenu : false }">
     {% include navbar.html %}
     <div class="flex-grow mt-8">{{ content }}</div>
