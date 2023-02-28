@@ -2619,14 +2619,29 @@ footer {
 }
 
 .compass-core p {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-  height: 5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  height: 6rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   text-align: center;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 700;
+}
+
+@media (min-width: 640px) {
+  .compass-core p {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .compass-core p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 /* SYMBOLS */
@@ -2664,9 +2679,25 @@ footer {
   content: '';
   background-position: center;
   background-repeat: no-repeat;
-  height: 10rem;
-  width: 10rem;
+  height: 9rem;
+  width: 9rem;
   background-size: contain;
+}
+
+@media (min-width: 768px) {
+  .symbol-big,
+.symbol-big::after {
+    height: 10rem;
+    width: 10rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .symbol-big,
+.symbol-big::after {
+    height: 11rem;
+    width: 11rem;
+  }
 }
 
 .symbol-huge,
@@ -3172,12 +3203,12 @@ footer {
     padding: 0.5rem;
   }
 
-  .md\:p-4 {
-    padding: 1rem;
-  }
-
   .md\:p-12 {
     padding: 3rem;
+  }
+
+  .md\:p-4 {
+    padding: 1rem;
   }
 
   .md\:py-16 {

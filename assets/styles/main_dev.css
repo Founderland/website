@@ -347,7 +347,7 @@ footer {
 }
 
 .compass-core p {
-  @apply text-sm text-center my-6 px-4 h-20;
+  @apply text-xs sm:text-sm lg:text-base font-bold text-center my-8 px-2 h-24;
 }
 
 /* SYMBOLS */
@@ -367,7 +367,7 @@ footer {
   content: '';
   background-position: center;
   background-repeat: no-repeat;
-  @apply w-40 h-40 bg-contain;
+  @apply w-36 h-36 md:w-40 md:h-40 xl:w-44 xl:h-44 bg-contain;
 }
 
 .symbol-huge,
