@@ -40,11 +40,12 @@
         <li>&nbsp;</li>
         {% for item in site.data.navigation %}
         <li>
-            <a href="{{item.link}}" class="inline-flex py-2 px-6 mb-4" aria-current="true">{{item.name}}</a>
+            <a href="{{site.baseurl}}{{item.link}}" class="inline-flex py-2 px-6 mb-4"
+                aria-current="true">{{item.name}}</a>
         </li>
         {% endfor %}
         <li class="pl-6">
-            <a href="#" class="inline-flex py-2 px-3 bg-fdllime">Login</a>
+            <a href="https://community.founderland.org/community" class="inline-flex py-2 px-3 bg-fdllime">Login</a>
         </li>
 
     </ul>

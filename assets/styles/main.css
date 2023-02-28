@@ -3176,6 +3176,10 @@ footer {
     padding: 1rem;
   }
 
+  .md\:p-12 {
+    padding: 3rem;
+  }
+
   .md\:py-16 {
     padding-top: 4rem;
     padding-bottom: 4rem;
