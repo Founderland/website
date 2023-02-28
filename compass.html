@@ -84,7 +84,7 @@ permalink: /compass/
 </div>
 <div class="bg-black text-white">
     <figure>
-        <div class="compass-core grid grid-cols-1 md:grid-cols-2 md:gap-4">
+        <div class="pt-8 md:pt-20 compass-core grid grid-cols-1 md:grid-cols-2 md:gap-4">
             <div class="grid grid-cols-2 gap-4">
                 <div class="flex flex-col justify-center items-center">
                     <div class="symbol Blooming sympink symbol-big"></div>
@@ -223,17 +223,18 @@ permalink: /compass/
 <div class="bg-fdlblue text-white">
     <section>
         <h1 class=" text-center">Compass 2023 Speakers</h1>
-        <div class="py-8">
-            <div class="text-inter grid justify-items-center sm:grid-cols-2 gap-2 md:gap-4">
+        <div class="p-12 md:p-2">
+            <div class="text-inter grid justify-items-center sm:grid-cols-2 gap-2 lg:gap-6">
                 {% for speaker in site.data.compassspeakers23 %}
-                <div class="relative mb-12">
+                <div class="relative mb-20 bg-black sm:bg-transparent">
                     <img src="{{ site.baseurl }}/{{ speaker.headshot }}"
                         class="w-full sm:w-64 aspect-square object-cover object-top lg:h-full lg:float-left mx-auto lg:m-4 lg:mb-8"
                         alt="{{ speaker.name }}">
                     <a href="{{ speaker.link }}" target="_blank"
-                        class="absolute top-60 left-2 lg:bottom-0 lg:top-auto text-black text-2xl bg-white px-2 underline underline-offset-4 decoration-fdlblue-400 hover:decoration-fdlblue-600 py-0 leading-tight">
+                        class="sm:absolute top-72 sm:top-60 md:top-56 left-2 lg:bottom-0 lg:top-auto text-black text-2xl bg-white px-2 underline underline-offset-4 decoration-fdlblue-400 hover:decoration-fdlblue-600 py-0 leading-tight">
                         {{ speaker.name }}</a>
-                    <p class="lg:ml-4 sm:w-64 lg:w-full px-16 text-xs bg-black py-8 lg:mt-8 ">{{speaker.bio}}</p>
+                    <p class="lg:ml-4 sm:w-64 lg:w-full px-8 lg:pl-16 text-xs bg-black py-6 lg:mt-8 ">{{speaker.bio}}
+                    </p>
                 </div>
                 {% endfor %}
             </div>
@@ -276,7 +277,7 @@ permalink: /compass/
     </div>
 </div>
 <section>
-    <h2>About Compass</h2>
+    <h2>FREQUENTLY ASKED QUESTIONS</h2>
     <h3>General</h3>
     {% for question in site.data.faq.compass_general %}
     <div x-data="{ expanded: false }" class="relative border border-gray-400 mb-4 p-4 text-mono">
@@ -401,7 +402,7 @@ permalink: /compass/
         class="w-full md:w-1/2 lg:w-1/3 p-12">
     <div class="w-full md:w-1/2 flex flex-col justify-center items-center p-8">
         <h2 class="text-center">Want to be part of 2023 cohort</h2>
-        <a href="#" class="button ">Apply for Compass</a>
+        <a href="https://u46iu5kv85h.typeform.com/to/ZyYR5Mzh" target="_blank" class="button ">Apply for Compass</a>
     </div>
 </div>
 <div>
