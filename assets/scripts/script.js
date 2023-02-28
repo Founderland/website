@@ -1,5 +1,3 @@
-$('.marquee').marquee({ direction: 'left' })
-
 function createCookie(name, value, days) {
   var expires = ''
   if (days) {
@@ -66,3 +64,16 @@ document.getElementById('c-banner-deny').addEventListener('click', function () {
   document.getElementById('c-banner').style.display = 'none'
   location.reload()
 })
+
+const carousel = () => {
+  return {
+    selected: 0,
+    images: [
+      '../assets/images/compass/timeline1.png',
+      '../assets/images/compass/timeline2.png',
+      '../assets/images/compass/timeline3.png',
+      '../assets/images/compass/timeline4.png',
+      '../assets/images/compass/timeline5.png',
+    ],
+  }
+}
