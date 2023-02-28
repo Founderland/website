@@ -11,7 +11,7 @@ permalink: /careers/
 {% for post in site.posts %}
 <div class="flex justify-center items-center py-24 px-8 text-center {{post.colour}}">
     <h3><a class="underline decoration-gray-400 underline-offset-4 hover:decoration-gray-500"
-            href="{{site.baseurl}}/{{ post.url }}">{{
+            href="{{site.baseurl}}{{ post.url }}">{{
             post.title }}</a></h3>
 </div>
 {% endfor %}
