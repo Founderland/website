@@ -254,7 +254,7 @@ footer {
 }
 
 .faq a {
-  @apply text-black font-bold hover:text-fdlblue;
+  @apply text-black font-extrabold hover:text-fdlblue;
 }
 .faq ul {
   @apply list-disc list-inside pl-2 marker:text-gray-600 text-xs sm:text-sm lg:text-base font-normal text-grotesk;
