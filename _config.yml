@@ -6,6 +6,7 @@ description: "WE'RE BUILDING A NEW INCLUSIVE AND INTERSECTIONAL STANDARD FOR ENT
 baseurl: '/website' # the subpath of your site, e.g. /blog
 url: 'https://founderland.github.io' # the base hostname & protocol for your site
 permalink: pretty
+google_analytics: G-FDGXRYRKNX
 
 # Build settings
 exclude:
