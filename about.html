@@ -127,7 +127,8 @@ permalink: /about/
             <img class="w-full aspect-square" src="{{ site.baseurl }}/{{ Name.headshot }}" alt="{{ Name.Name }}"
                 class="w-full h-full object-cover">
             {% if Name.linkedin != null %}
-            <a href="{{Name.linkedin}}" class="text-fdlblue font-bold mt-4 text-xs lg:text-base">{{ Name.Name }}</a>
+            <a href="{{Name.linkedin}}" class="text-fdlblue font-bold mt-4 text-xs lg:text-base" target="_blank">{{
+                Name.Name }}</a>
             {% endif %}
             <span class="text-xxs lg:text-xs 2xl:text-sm">{{ Name.title }}</span>
         </div>
