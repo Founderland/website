@@ -129,6 +129,8 @@ permalink: /about/
             {% if Name.linkedin != null %}
             <a href="{{Name.linkedin}}" class="text-fdlblue font-bold mt-4 text-xs lg:text-base" target="_blank">{{
                 Name.Name }}</a>
+            {% else %}
+            <span class="text-fdlblue font-bold mt-4 text-xs lg:text-base">{{ Name.Name }}</span>
             {% endif %}
             <span class="text-xxs lg:text-xs 2xl:text-sm">{{ Name.title }}</span>
         </div>
